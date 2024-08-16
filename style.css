@@ -47,13 +47,13 @@
 }
 
 .side_menu .logo img {
-  width: 26px;
+  width: 30px;
   margin-right: 6px;
 }
 
 .side_menu .logo span {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--primary-color);
 }
 
@@ -89,6 +89,6 @@
 .side_menu .nav_area {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 41px); 
+    height: calc(100% - 45px); 
     justify-content: space-between;
 }
