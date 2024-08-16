@@ -86,3 +86,9 @@
   margin-right: 6px;
 }
 
+.side_menu .nav_area {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 41px); 
+    justify-content: space-between;
+}
