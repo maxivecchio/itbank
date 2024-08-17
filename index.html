@@ -18,7 +18,7 @@
     <!-- Menú lateral -->
     <aside class="side_menu">
       <header class="logo">
-        <img src="/img/logo.webp" alt="Rossum Logo" />
+        <img src="./img/logo.webp" alt="Rossum Logo" />
         <span>HomeBanking</span>
       </header>
       <div class="nav_area">
@@ -45,7 +45,7 @@
         <nav>
           <ul>
             <li>
-              <a href="index.html"
+              <a href="perfil.html"
                 ><i class="fa-solid fa-user fa-icon"></i> Perfil</a
               >
             </li>
@@ -65,22 +65,77 @@
       <marquee behavior="" direction="">
         <div id="cotizaciones"></div>
       </marquee>
-      <footer>
-        <p>
-          Contactanos en <br />
-          <a href="https://www.instagram.com/"> Instagram </a>
-          <br />
-          <a href="https://www.facebook.com/"> Facebook </a>
-        </p>
-        <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
-        <p>
+      <div class="main_date">
+        <div class="dashboard">
+          <div class="balance">
+            Balance
+            <span class="balance__value">$43.521,08</span>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div>
+                <div>Tarjeta de crédito</div>
+                <div class="card-number">**** **** **** 7526</div>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div>Tarjeta de débito</div>
+                <div class="card-number">**** **** **** 8321</div>
+              </div>
+            </div>
+          </div>
+          <div class="last-transactions">
+            <h3>Últimas transacciones</h3>
+            <div class="transaction-list">
+              <div class="transaction-item">
+                <div>Supermecado</div>
+                <div style="color: red">-$79,76</div>
+              </div>
+              <div class="transaction-item">
+                <div>Insumos medicos</div>
+                <div style="color: green">+$512,45</div>
+              </div>
+              <div class="transaction-item">
+                <div>Electrodomesticos</div>
+                <div style="color: red">-$34,40</div>
+              </div>
+            </div>
+          </div>
+          <div class="spending-chart">
+            <h3>My Spending</h3>
+            <!-- Aquí iría una gráfica representando el gasto -->
+            <p>(Gráfico de barras o similar)</p>
+          </div>
+          <div class="credit-limit">
+            <h3>Limite Crediticio</h3>
+            <div class="credit-info">$4,000 / $10,000</div>
+          </div>
+        </div>
+      </div>
+      <footer class="info-last">
+        <div>
+          <!-- <p>
+            Contactanos en <br />
+            <a href="https://www.instagram.com/"> Instagram </a>
+            <br />
+            <a href="https://www.facebook.com/"> Facebook </a>
+          </p> -->
+          <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
           <a
             href="/politica-de-privacidad"
             target="_blank"
             title="vea nuestra politica de privacidad"
             >Politica de privacidad
           </a>
-        </p>
+
+          <a
+            href="/politica-de-privacidad"
+            target="_blank"
+            title="vea nuestra politica de privacidad"
+            >Términos y condiciones
+          </a>
+        </div>
       </footer>
     </div>
   </body>

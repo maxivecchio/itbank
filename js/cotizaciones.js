@@ -1,6 +1,6 @@
 const divCotizaciones = document.querySelector('#cotizaciones');
 
-fetch('https://dolarapi.com/v1/dolares/blue')
+fetch('https://dolarapi.com/v1/dolares/bolsa')
     .then(response => response.json())
     .then(data => {
         divCotizaciones.innerHTML = `

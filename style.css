@@ -15,6 +15,9 @@
 .main_content {
   margin-left: 250px;
   transition: 0.5s;
+  background: #f6f7f8;
+  min-height: 100svh;
+  padding: 20px;
 }
 
 .side_menu {
@@ -87,8 +90,84 @@
 }
 
 .side_menu .nav_area {
-    display: flex;
-    flex-direction: column;
-    height: calc(100% - 45px); 
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 45px);
+  justify-content: space-between;
+}
+
+.dashboard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.balance {
+  border: 1px solid rgb(214, 214, 214);
+  display: flex;
+  width: 340px;
+  padding: 12px;
+  border-radius: 8px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.balance span {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background-color: #e6f2ff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card:nth-child(2) {
+  background-color: #f2f2f2;
+}
+
+.card-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.last-transactions,
+.credit-limit {
+  margin-bottom: 20px;
+}
+
+.transaction-list,
+.spending-chart,
+.credit-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.spending-chart {
+  margin-bottom: 20px;
+}
+
+.info-last {
+  margin-top: 40px;
+  text-align: center;
 }
