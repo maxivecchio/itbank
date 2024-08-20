@@ -12,10 +12,6 @@
   /* --primary-color: #005d9718; */
 }
 
-body {
-  background: #ebf8ff;
-}
-
 .main_content {
   margin-left: 300px;
   transition: 0.5s;
@@ -25,7 +21,7 @@ body {
 }
 
 .side_menu_wrapper {
-  padding: 16px;
+  padding: 8px;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,13 +56,13 @@ body {
 }
 
 .side_menu .logo img {
-  width: 30px;
+  width: 40px;
   margin-right: 6px;
 }
 
 .side_menu .logo span {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--primary-color);
 }
 
