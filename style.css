@@ -206,3 +206,9 @@
   background: #fff;
   border-radius: 16px;
 }
+
+#convesor-form {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}

@@ -8,7 +8,7 @@ form.addEventListener('submit', (event) => {
     fetch(`https://dolarapi.com/v1/dolares/oficial`)
         .then(response => response.json())
         .then(data => {
-            const resultado = cantidad / data.compra;
+            const resultado = cantidad / data.venta;
             console.log(resultado)
             inputResultado.value = resultado;
         });
