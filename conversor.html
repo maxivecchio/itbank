@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/82cfd2079d.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="/js/conversor.js"></script>
     <!-- <script defer src="./js/cotizaciones.js"></script> -->
   </head>
   <body>
@@ -74,7 +75,22 @@
     <div class="main_content">
       <main class="dashboard">
         <div class="dashboard_content">
-          <input class="input-number" >
+          <!-- conversor form -->
+          <div class="conversor">
+            <h2>Conversor de monedas</h2>
+            <form class="conversor-form" action="#">
+              <label for="ingresar-monto">Ingresar monto a convertir</label>
+              <input
+                type="number"
+                id="ingresar-monto"
+                name="ingresar-monto"
+                placeholder="ARS"
+              />
+              <label for="resultado">Resultado</label>
+              <input id="resultado" name="resultado" placeholder="USD" />
+              <button type="submit">Convertir</button>
+            </form>
+          </div>
         </div>
         <aside class="right-column">
           <div class="my_account">
@@ -103,7 +119,7 @@
           </a>
 
           <a
-            href="/politica-de-privacidad"
+            href="/terminos-y-condiciones"
             target="_blank"
             title="vea nuestra politica de privacidad"
             >Términos y condiciones
