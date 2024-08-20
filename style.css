@@ -206,3 +206,10 @@
   background: #fff;
   border-radius: 16px;
 }
+
+.conversor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
