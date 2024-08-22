@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Home Banking | Rossum</title>
     <link rel="icon" href="./img/logo.webp" type="image/weebp" />
     <script
@@ -15,14 +15,13 @@
   </head>
   <body>
     <!-- Header -->
-    <header></header>
+    <header class="main_header logo">
+      <img src="./img/logo.webp" alt="Rossum Logo" />
+      <span>Rossum | HomeBanking</span>
+    </header>
     <!-- Menú lateral -->
     <aside class="side_menu_wrapper">
       <div class="side_menu">
-        <header class="logo">
-          <img src="./img/logo.webp" alt="Rossum Logo" />
-          <span>HomeBanking</span>
-        </header>
         <div class="nav_area">
           <nav>
             <ul>
@@ -68,53 +67,57 @@
       </div>
     </aside>
     <!-- Contenido de la página -->
-    <div class="main_content">
-      <main class="dashboard">
-        <div class="dashboard_content">
-          <!-- conversor form -->
-          <div class="conversor">
-            <h2>Conversor de monedas</h2>
-            <!-- Contenido de la página -->
-            <div id="cotizaciones"></div>
-            <form class="conversor-form" action="#">
-              <label for="ingresar-monto">Ingresar monto a convertir (ARS)</label>
-              <input
-                type="number"
-                id="ingresar-monto"
-                name="ingresar-monto"
-                placeholder="ARS"
-              />
-              <label for="resultado">Resultado (Dólar oficial)</label>
-              <input id="resultado" name="resultado" placeholder="USD" />
-              <button type="submit">Convertir</button>
-            </form>
+    <div class="web_frame">
+      <div class="main_content">
+        <main class="dashboard">
+          <div class="dashboard_content">
+            <!-- conversor form -->
+            <div class="conversor">
+              <h2>Conversor de monedas</h2>
+              <!-- Contenido de la página -->
+              <div id="cotizaciones"></div>
+              <form class="conversor-form" action="#">
+                <label for="ingresar-monto"
+                  >Ingresar monto a convertir (ARS)</label
+                >
+                <input
+                  type="number"
+                  id="ingresar-monto"
+                  name="ingresar-monto"
+                  placeholder="ARS"
+                />
+                <label for="resultado">Resultado (Dólar oficial)</label>
+                <input id="resultado" name="resultado" placeholder="USD" />
+                <button type="submit">Convertir</button>
+              </form>
+            </div>
           </div>
-        </div>
-      </main>
-      <footer class="info-last">
-        <div>
-          <!-- <p>
+        </main>
+        <footer class="info-last">
+          <div>
+            <!-- <p>
             Contactanos en <br />
             <a href="https://www.instagram.com/"> Instagram </a>
             <br />
             <a href="https://www.facebook.com/"> Facebook </a>
           </p> -->
-          <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
-          <a
-            href="/politica-de-privacidad"
-            target="_blank"
-            title="vea nuestra politica de privacidad"
-            >Politica de privacidad
-          </a>
+            <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
+            <a
+              href="/politica-de-privacidad"
+              target="_blank"
+              title="vea nuestra politica de privacidad"
+              >Politica de privacidad
+            </a>
 
-          <a
-            href="/terminos-y-condiciones"
-            target="_blank"
-            title="vea nuestra politica de privacidad"
-            >Términos y condiciones
-          </a>
-        </div>
-      </footer>
+            <a
+              href="/terminos-y-condiciones"
+              target="_blank"
+              title="vea nuestra politica de privacidad"
+              >Términos y condiciones
+            </a>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

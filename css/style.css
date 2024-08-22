@@ -13,9 +13,30 @@
   /* --primary-color: #005d9718; */
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
   background: #1a1a1a;
 }
+
 
 .web_frame {
   background: #f1f1f1;
@@ -242,7 +263,7 @@ body {
 .side_content {
   width: 100%;
   height: 100%;
- /*  background: #fff; */
+  /*  background: #fff; */
   border-radius: 16px;
 }
 
