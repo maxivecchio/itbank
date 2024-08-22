@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Cuentas</title>
+    <title>Home Banking | Rossum</title>
     <link rel="icon" href="./img/logo.webp" type="image/weebp" />
     <script
       src="https://kit.fontawesome.com/82cfd2079d.js"
@@ -12,48 +12,87 @@
     ></script>
   </head>
   <body>
+    <!-- Header -->
+    <header></header>
     <!-- Menú lateral -->
-    <aside class="side_menu">
-      <header class="logo">
-        <img src="/img/logo.webp" alt="Rossum Logo" />
-        <span>HomeBanking</span>
-      </header>
-      <div class="nav_area">
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html"
-                ><i class="fa-solid fa-house fa-icon"></i> Inicio</a
-              >
-            </li>
-            <li>
-              <a href="cuentas.html" class="active"
-                ><i class="fa-solid fa-money-bill fa-icon"></i> Cuentas</a
-              >
-            </li>
-            <li>
-              <a href="transferencias.html"
-                ><i class="fa-solid fa-arrow-right-arrow-left fa-icon"></i>
-                Transferencias</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html"
-                ><i class="fa-solid fa-user fa-icon"></i> Perfil</a
-              >
-            </li>
-            <li>
-              <a href="cuentas.html"
-                ><i class="fa-solid fa-gear fa-icon"></i> Configuración</a
-              >
-            </li>
-          </ul>
-        </nav>
+    <aside class="side_menu_wrapper">
+      <div class="side_menu">
+        <header class="logo">
+          <img src="./img/logo.webp" alt="Rossum Logo" />
+          <span>HomeBanking</span>
+        </header>
+        <div class="nav_area">
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-house fa-icon"></i> Inicio</a
+                >
+              </li>
+              <li>
+                <a class="active" href="cuentas.html"
+                  ><i class="fa-solid fa-money-bill fa-icon"></i> Cuentas</a
+                >
+              </li>
+              <li>
+                <a href="transferencias.html"
+                  ><i class="fa-solid fa-arrow-right-arrow-left fa-icon"></i>
+                  Transferencias</a
+                >
+              </li>
+              <li>
+                <a href="conversor.html"
+                  ><i class="fa-solid fa-arrow-right-arrow-left fa-icon"></i>
+                  Conversor</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <ul>
+              <li>
+                <a href="perfil.html"
+                  ><i class="fa-solid fa-user fa-icon"></i> Perfil</a
+                >
+              </li>
+              <li>
+                <a href="configuracion.html"
+                  ><i class="fa-solid fa-gear fa-icon"></i> Configuración</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </aside>
+    <div class="main_content">
+      <main class="dashboard">
+        
+      </main>
+      <footer class="info-last">
+        <div>
+          <!-- <p>
+            Contactanos en <br />
+            <a href="https://www.instagram.com/"> Instagram </a>
+            <br />
+            <a href="https://www.facebook.com/"> Facebook </a>
+          </p> -->
+          <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
+          <a
+            href="/politica-de-privacidad"
+            target="_blank"
+            title="vea nuestra politica de privacidad"
+            >Politica de privacidad
+          </a>
+
+          <a
+            href="/terminos-y-condiciones"
+            target="_blank"
+            title="vea nuestra politica de privacidad"
+            >Términos y condiciones
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
