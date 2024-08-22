@@ -15,9 +15,35 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="main_header logo">
-      <img src="./img/logo.webp" alt="Rossum Logo" />
-      <span><span class="logo_name">Rossum | </span>HomeBanking</span>
+    <header class="main_header">
+      <button id="menuOpener"><i class="fa-solid fa-bars"></i></button>
+      <div class="logo">
+        <img src="./img/logo.webp" alt="Rossum Logo" />
+        <span><span class="logo_name">Rossum | </span>HomeBanking</span>
+      </div>
+      <div class="perfil_dropdown_container">
+        <ul class="dropdown">
+          <li>
+            <input id="check01" type="checkbox" name="menu" />
+            <label for="check01"
+              ><i class="fa-solid fa-user"></i>daskodasjd aksjd</label
+            >
+            <ul class="dropdown-content">
+              <li>
+                <a href="#home"><i class="fas fa-home"></i>Home</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#messages"><i class="fas fa-envelope"></i>Messages</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#settings"><i class="fas fa-cog"></i>Settings</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- Menú lateral -->
     <aside class="side_menu_wrapper">
@@ -43,15 +69,13 @@
               </li>
               <li>
                 <a class="active" href="conversor.html"
-                  ><i class="fa-solid fa-calculator fa-icon"></i>
-                  Conversor</a
+                  ><i class="fa-solid fa-calculator fa-icon"></i> Conversor</a
                 >
               </li>
             </ul>
           </nav>
           <nav>
             <ul>
-              
               <li>
                 <a href="configuracion.html"
                   ><i class="fa-solid fa-gear fa-icon"></i> Configuración</a
