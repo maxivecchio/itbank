@@ -468,8 +468,10 @@ body {
 
 .perfil_dropdown_container .fa-user,
 .perfil_dropdown_container .fa-home,
-.perfil_dropdown_container .fa-envelope,
-.perfil_dropdown_container .fa-cog {
+.perfil_dropdown_container .fa-bell,
+.perfil_dropdown_container .fa-cog,
+.perfil_dropdown_container .fa-arrow-right-from-bracket
+ {
   padding-right: 15px;
   size: 15px;
 }
