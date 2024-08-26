@@ -36,7 +36,7 @@
 
 .conversor-form {
   margin: 0 auto;
-    margin-top: 30px;
+  margin-top: 30px;
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 8px;
@@ -87,7 +87,7 @@
 }
 
 #input-conversor-error {
-  color: #d70000;
+  color: #b00000;
   margin-top: 0;
   font-size: 14px;
 }

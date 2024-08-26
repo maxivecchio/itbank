@@ -151,6 +151,7 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
   gap: 16px;
+  min-height: 100svh;
 }
 
 .dashboard_content {
@@ -173,7 +174,7 @@ body {
 
 .balance__value {
   font-weight: bold;
-  font-size: 24px !important; 
+  font-size: 24px !important;
   color: var(--primary-color) !important;
 }
 
@@ -464,8 +465,7 @@ body {
 .perfil_dropdown_container .fa-home,
 .perfil_dropdown_container .fa-bell,
 .perfil_dropdown_container .fa-cog,
-.perfil_dropdown_container .fa-arrow-right-from-bracket
- {
+.perfil_dropdown_container .fa-arrow-right-from-bracket {
   padding-right: 15px;
   size: 15px;
 }
@@ -481,6 +481,12 @@ body {
 @media (max-width: 600px) {
   .logo span {
     display: none;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.25em;
   }
 }
 

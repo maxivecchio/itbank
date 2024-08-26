@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/transferencias.css" />
     <title>Home Banking | Rossum</title>
     <link rel="icon" href="./img/logo.webp" type="image/weebp" />
     <script
@@ -33,9 +34,7 @@
               </li>
               <hr />
               <li>
-                <a href="#"
-                  ><i class="fas fa-bell"></i>Notificaciones</a
-                >
+                <a href="#"><i class="fas fa-bell"></i>Notificaciones</a>
               </li>
               <hr />
               <li>
@@ -95,7 +94,72 @@
     </aside>
     <div class="web_frame">
       <div class="main_content">
-        <main class="dashboard"></main>
+        <main class="dashboard">
+          <div class="dashboard_content">
+            <h1>Historial de transferencias</h1>
+            <table class="transaction-table">
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Descripción</th>
+                  <th>Monto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Fecha">2024-08-16</td>
+                  <td data-label="Descripción">Pago de tarjeta de crédito</td>
+                  <td class="negativo" data-label="Monto">- $3,200.00</td>
+                </tr>
+                <tr>
+                  <td data-label="Fecha">2024-08-15</td>
+                  <td data-label="Descripción">Depósito en cuenta</td>
+                  <td class="positivo" data-label="Monto">+ $5,000.00</td>
+                </tr>
+                <tr>
+                  <td data-label="Fecha">2024-08-14</td>
+                  <td data-label="Descripción">Compra en tienda online</td>
+                  <td class="negativo" data-label="Monto">- $1,200.00</td>
+                </tr>
+                <tr>
+                  <td data-label="Fecha">2024-08-13</td>
+                  <td data-label="Descripción">Transferencia enviada</td>
+                  <td class="negativo" data-label="Monto">- $2,000.00</td>
+                </tr>
+                <tr>
+                  <td data-label="Fecha">2024-08-12</td>
+                  <td data-label="Descripción">Transferencia recibida</td>
+                  <td class="positivo" data-label="Monto">+ $1,500.00</td>
+                </tr>
+                <tr>
+                  <td data-label="Fecha">2024-08-11</td>
+                  <td data-label="Descripción">Pago de servicios públicos</td>
+                  <td class="negativo" data-label="Monto">- $900.00</td>
+                </tr>
+                <tr>
+                  <td data-label="Fecha">2024-08-10</td>
+                  <td data-label="Descripción">Depósito de nómina</td>
+                  <td class="positivo" data-label="Monto">+ $8,000.00</td>
+                </tr>
+                <tr>
+                  <td data-label="Fecha">2024-08-09</td>
+                  <td data-label="Descripción">Retiro en cajero automático</td>
+                  <td class="negativo" data-label="Monto">- $500.00</td>
+                </tr>
+                <tr>
+                  <td data-label="Fecha">2024-08-08</td>
+                  <td data-label="Descripción">Transferencia enviada</td>
+                  <td class="negativo" data-label="Monto">- $1,000.00</td>
+                </tr>
+                <tr>
+                  <td data-label="Fecha">2024-08-07</td>
+                  <td data-label="Descripción">Transferencia recibida</td>
+                  <td class="positivo" data-label="Monto">+ $3,000.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
         <footer class="info-last">
           <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
         </footer>
