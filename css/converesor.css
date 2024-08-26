@@ -91,3 +91,9 @@
   margin-top: 0;
   font-size: 14px;
 }
+
+@media (max-width: 480px) {
+  #cotizaciones div {
+    width: 100%;
+  }
+}

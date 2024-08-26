@@ -166,9 +166,10 @@ body {
   margin-bottom: 20px;
 }
 
-.balance span {
+.balance h2 {
   display: block;
   font-size: 14px;
+  font-weight: 500;
   color: #777777;
 }
 
