@@ -45,15 +45,19 @@
 
 .conversor-form label {
   display: block;
+  margin-top: 15px;
   margin-bottom: 8px;
   font-weight: bold;
   color: #333;
 }
 
+.conversor-form label:first-child {
+  margin-top: 0;
+}
+
 .conversor-form input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
@@ -80,4 +84,10 @@
 
 .conversor-form button:hover {
   opacity: 0.9;
+}
+
+#input-conversor-error {
+  color: #d70000;
+  margin-top: 0;
+  font-size: 14px;
 }
