@@ -12,7 +12,7 @@ function updateLabel() {
     if (screenWidth <= 768) {
         labelText.textContent = "Mi Cuenta";
     } else {
-        labelText.textContent = "Mi Nombre Apellido";
+        labelText.textContent = "Juan R Gómez";
     }
 }
 
