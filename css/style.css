@@ -506,3 +506,7 @@ body {
     width: 176px;
   }
 }
+
+.screen-reader-only {
+  display: none;
+}
