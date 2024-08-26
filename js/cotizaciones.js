@@ -4,8 +4,7 @@ fetch('https://dolarapi.com/v1/dolares/oficial')
     .then(response => response.json())
     .then(data => {
         divCotizaciones.innerHTML = `
-        <p>(Oficial)</p>
-        <span>Compra: $${data.compra}</span>
-        <span>Venta: $${data.venta}</span>
+        <div><span>Compra:</span><span class="cotizacion_numero">$${data.compra}</span></div>
+        <div><span>Venta:</span> <span class="cotizacion_numero">$${data.venta}</span></div>
         `;
     })
