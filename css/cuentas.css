@@ -7,18 +7,6 @@ body {
 header h1 {
     margin: 0;
 }
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-nav ul li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
 main {
     padding: 20px;
 }
@@ -29,7 +17,7 @@ main {
 .account-card {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 20px;
 }
