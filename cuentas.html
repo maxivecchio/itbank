@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/cuentas.css" />
     <title>Home Banking | Rossum</title>
     <link rel="icon" href="./img/logo.webp" type="image/weebp" />
     <script
@@ -25,22 +26,27 @@
           <li>
             <input id="check01" type="checkbox" name="menu" />
             <label for="check01"
-              ><i class="fa-solid fa-user"></i><span id="user_name"></span></label
-            >
+              ><i class="fa-solid fa-user"></i><span id="user_name"></span
+            ></label>
             <ul class="dropdown-content">
               <li>
-                <a href="#home"><i class="fas fa-user"></i>Ver perfil</a>
+                <a href="#"><i class="fas fa-user"></i>Ver perfil</a>
               </li>
               <hr />
               <li>
-                <a href="#messages"><i class="fas fa-bell"></i>Notificaciones</a>
+                <a href="#"
+                  ><i class="fas fa-bell"></i>Notificaciones</a
+                >
               </li>
               <hr />
               <li>
-                <a href="#settings"><i class="fas fa-cog"></i>Config. Token</a>
+                <a href="#"><i class="fas fa-cog"></i>Config. Token</a>
               </li>
               <li>
-                <a href="#settings"><i class="fas fa-arrow-right-from-bracket"></i>Cerrar sesión</a>
+                <a href="#"
+                  ><i class="fas fa-arrow-right-from-bracket"></i>Cerrar
+                  sesión</a
+                >
               </li>
             </ul>
           </li>
@@ -88,32 +94,33 @@
         </div>
       </div>
     </aside>
+
+    <!-- Contenido -->
     <div class="web_frame">
       <div class="main_content">
-        <main class="dashboard"></main>
-        <footer class="info-last">
-          <div>
-            <!-- <p>
-            Contactanos en <br />
-            <a href="https://www.instagram.com/"> Instagram </a>
-            <br />
-            <a href="https://www.facebook.com/"> Facebook </a>
-          </p> -->
-            <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
-            <a
-              href="/politica-de-privacidad"
-              target="_blank"
-              title="vea nuestra politica de privacidad"
-              >Politica de privacidad
-            </a>
-
-            <a
-              href="/terminos-y-condiciones"
-              target="_blank"
-              title="vea nuestra politica de privacidad"
-              >Términos y condiciones
-            </a>
+        <main class="dashboard">
+          <div class="accounts-section">
+          <h1>Mis Cuentas</h1>
+          <br>
+          <div class="account-card">
+              <h2>Cuenta Corriente</h2>
+              <div class="saldotransacciones">
+                  <p>Saldo: $1,250</p>
+                   <p>Última transacción: $-50.00 (Compra en supermercado)</p>
+              </div>
+              <button>Ver Detalles de Transacciones</button>
+              <br><br><br>
           </div>
+          <div class="account-card">
+              <h2>Cuenta de Ahorros</h2>
+              <p>Saldo: $5,789</p>
+              <p>Última transacción: $+200.00 (Depósito)</p>
+              <button>Ver Detalles de Transacciones</button>
+          </div>
+          <!-- Añadir más cuentas aquí -->
+        </div></main>
+        <footer class="info-last">
+          <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
         </footer>
       </div>
     </div>
