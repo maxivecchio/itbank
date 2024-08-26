@@ -15,6 +15,6 @@ form.addEventListener('submit', (event) => {
         .then(data => {
             const resultado = cantidad / data.venta;
             console.log(resultado)
-            inputResultado.value = resultado.toFixed(2);
+            inputResultado.value = resultado.toFixed(3);
         });
 });
