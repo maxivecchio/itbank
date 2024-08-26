@@ -3,7 +3,7 @@ function login() {
   let pass = document.getElementById("clave").value;
 
   if (user == "Juan" && pass == "1234") {
-    window.location = "index.html";
+    window.location = "inicio.html";
   } else {
     alert("Datos incorrectos");
   }

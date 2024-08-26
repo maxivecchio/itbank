@@ -161,25 +161,21 @@ body {
   padding: 20px;
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e0e0e0;
   max-width: 300px;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .balance span {
   display: block;
   font-size: 14px;
   color: #777777;
-  margin-bottom: 5px;
 }
 
 .balance__value {
   font-weight: bold;
-  font-size: 24px;
-  color: #333333;
+  font-size: 24px !important; 
+  color: var(--primary-color) !important;
 }
-
 
 .card-container {
   display: flex;
