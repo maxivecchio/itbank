@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/config.css" />
+    <link rel="stylesheet" type="text/css" href="./css/secutiry.css" />
     <title>Configuración | Home Banking</title>
     <link rel="icon" href="./img/logo.webp" type="image/weebp" />
     <script
@@ -97,47 +97,45 @@
     <div class="web_frame">
       <div class="main_content">
         <main class="dashboard">
-<body>
+        <body>
     <div class="container">
-        <aside class="sidebar">
-            <h2>Configuraciones</h2>
-            <ul>
-                <li><a href="perfil.html" class="">Perfil</a></li>
-                <li><a href="seguridad.html">Seguridad</a></li>
-                <li><a href="#notificaciones">Notificaciones</a></li>
-                <li><a href="#preferencias">Preferencias</a></li>
-                <li><a href="#ayuda">Ayuda</a></li>
-            </ul>
-        </aside>
+        <header class="header">
+            <h1>Configuración de Seguridad</h1>
+        </header>
         <main class="content">
-            <section id="perfil">
-                <h3>Perfil</h3>
-                <p>Aquí puedes actualizar tus datos personales.</p>
-                <!-- Aquí agregarías los formularios y configuraciones relacionadas con el perfil -->
+            <section id="cambiar-contraseña">
+                <h2>Cambiar Contraseña</h2>
+                <form action="/cambiar-contraseña" method="post">
+                    <div class="form-group">
+                        <label for="current-password">Contraseña Actual</label>
+                        <input type="password" id="current-password" name="current-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-password">Nueva Contraseña</label>
+                        <input type="password" id="new-password" name="new-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar Nueva Contraseña</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit">Cambiar Contraseña</button>
+                </form>
             </section>
-            <section id="seguridad">
-                <h3>Seguridad</h3>
-                <p>Configura tus opciones de seguridad, como contraseñas y autenticación.</p>
-                <!-- Aquí agregarías las opciones y configuraciones de seguridad -->
-            </section>
-            <section id="notificaciones">
-                <h3>Notificaciones</h3>
-                <p>Gestiona tus preferencias de notificación.</p>
-                <!-- Aquí agregarías las opciones de notificación -->
-            </section>
-            <section id="preferencias">
-                <h3>Preferencias</h3>
-                <p>Ajusta la apariencia y la funcionalidad de tu cuenta.</p>
-                <!-- Aquí agregarías las opciones de preferencia -->
-            </section>
-            <section id="ayuda">
-                <h3>Ayuda</h3>
-                <p>Encuentra respuestas a tus preguntas frecuentes y contacto con soporte.</p>
-                <!-- Aquí agregarías las opciones de ayuda y soporte -->
+
+            <section id="autenticacion">
+                <h2>Autenticación de Dos Factores</h2>
+                <p>Configura la autenticación de dos factores (2FA) para aumentar la seguridad de tu cuenta.</p>
+                <form action="/configurar-2fa" method="post">
+                    <div class="form-group">
+                        <label for="phone">Número de Teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+34 600 000 000" required>
+                    </div>
+                    <button type="submit">Configurar 2FA</button>
+                </form>
             </section>
         </main>
     </div>
-</body>
+        </body>
 </html>
 
         </main>

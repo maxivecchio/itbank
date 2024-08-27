@@ -12,7 +12,7 @@ main {
 }
 .accounts-section {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 ;
 }
 .account-card {
     background-color: white;
