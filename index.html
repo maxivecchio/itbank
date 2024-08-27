@@ -3,19 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="icon" href="./img/logo.webp" type="image/weebp" />
     <script src="/js/login.js"></script>
     <title>Inicio Sesion</title>
   </head>
   <body>
-    <form action="">
-      <h1>iniciar Sesion</h1>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="./img/logo.webp" alt="Rossum Logo" />
+        <span><span class="logo_name">Rossum | </span>HomeBanking</span>
+      </div>
+    </div>
+    <div class="login-container">
+      <form action="">
+        <h2>iniciar Sesion</h2>
 
-      <label for=""></label>
-      <input type="text" placeholder="ingrese usuario" id="usuario" />
-      <label for=""></label>
-      <input type="password" placeholder="ingrese contraseña" id="clave" />
+        <label for=""></label>
+        <input type="text" placeholder="ingrese usuario" id="usuario" />
+        <label for=""></label>
+        <input type="password" placeholder="ingrese contraseña" id="clave" />
 
-      <input type="button" value="iniciar" onclick="login()" />
-    </form>
+        <input
+          type="button"
+          class="login-button"
+          value="iniciar"
+          onclick="login()"
+        />
+      </form>
+    </div>
   </body>
 </html>
