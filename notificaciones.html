@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/notificaciones.css" />
+    <title>Configuración | Home Banking</title>
+    <link rel="icon" href="./img/logo.webp" type="image/weebp" />
+    <script
+      src="https://kit.fontawesome.com/82cfd2079d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main_header">
+      <button id="menuOpener"><i class="fa-solid fa-bars"></i></button>
+      <div class="logo">
+        <img src="./img/logo.webp" alt="Rossum Logo" />
+        <span><span class="logo_name">Rossum | </span>HomeBanking</span>
+      </div>
+      <div class="perfil_dropdown_container">
+        <ul class="dropdown">
+          <li>
+            <input id="check01" type="checkbox" name="menu" />
+            <label for="check01"
+              ><i class="fa-solid fa-user"></i><span id="user_name"></span
+            ></label>
+            <ul class="dropdown-content">
+              <li>
+                <a href="#"><i class="fas fa-user"></i>Ver perfil</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#"
+                  ><i class="fas fa-bell"></i>Notificaciones</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>Config. Token</a>
+              </li>
+              <li>
+                <a href="index.html"
+                  ><i class="fas fa-arrow-right-from-bracket"></i>Cerrar
+                  sesión</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Menú lateral -->
+    <aside class="side_menu_wrapper">
+      <div class="side_menu">
+        <div class="nav_area">
+          <nav>
+            <ul>
+              <li>
+                <a href="inicio.html"
+                  ><i class="fa-solid fa-house fa-icon"></i> Inicio</a
+                >
+              </li>
+              <li>
+                <a href="cuentas.html"
+                  ><i class="fa-solid fa-money-bill fa-icon"></i> Cuentas</a
+                >
+              </li>
+              <li>
+                <a href="transferencias.html"
+                  ><i class="fa-solid fa-arrow-right-arrow-left fa-icon"></i>
+                  Transferencias</a
+                >
+              </li>
+              <li>
+                <a href="conversor.html"
+                  ><i class="fa-solid fa-calculator fa-icon"></i> Conversor</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <ul>
+              <li>
+                <a class="active" href="configuracion.html"
+                  ><i class="fa-solid fa-gear fa-icon"></i> Configuración</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+    <div class="web_frame">
+      <div class="main_content">
+        <main class="dashboard">
+            <div class="container">
+                <h1>Gestión de Preferencias de Notificaciones</h1>
+                <form id="notification-form">
+                    <div class="category">
+                        <h2>Correo Electrónico</h2>
+                        <div class="notification-option">
+                            <label>
+                                <input type="checkbox" name="email-promotions" id="email-promotions">
+                                Promociones y Ofertas
+                            </label>
+                        </div>
+                        <div class="notification-option">
+                            <label>
+                                <input type="checkbox" name="email-updates" id="email-updates">
+                                Actualizaciones de Cuenta
+                            </label>
+                        </div>
+                        <div class="notification-option">
+                            <label for="email-frequency">Frecuencia:</label>
+                            <select id="email-frequency" name="email-frequency">
+                                <option value="daily">Diaria</option>
+                                <option value="weekly">Semanal</option>
+                                <option value="monthly">Mensual</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <h2>SMS</h2>
+                        <div class="notification-option">
+                            <label>
+                                <input type="checkbox" name="sms-alerts" id="sms-alerts">
+                                Alertas Rápidas
+                            </label>
+                        </div>
+                        <div class="notification-option">
+                            <label for="sms-frequency">Frecuencia:</label>
+                            <select id="sms-frequency" name="sms-frequency">
+                                <option value="immediate">Inmediata</option>
+                                <option value="hourly">Cada Hora</option>
+                                <option value="daily">Diaria</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <h2>Aplicación</h2>
+                        <div class="notification-option">
+                            <label>
+                                <input type="checkbox" name="app-news" id="app-news">
+                                Noticias y Actualizaciones
+                            </label>
+                        </div>
+                        <div class="notification-option">
+                            <label>
+                                <input type="checkbox" name="app-messages" id="app-messages">
+                                Mensajes Directos
+                            </label>
+                        </div>
+                        <div class="notification-option">
+                            <label for="app-frequency">Frecuencia:</label>
+                            <select id="app-frequency" name="app-frequency">
+                                <option value="instant">Instantánea</option>
+                                <option value="daily">Diaria</option>
+                                <option value="weekly">Semanal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit">Guardar Preferencias</button>
+                </form>
+                <p id="result"></p>
+            </div>
+            <script src="./js/notificaciones.js"></script>
+        </main>
+        <footer class="info-last">
+          <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
