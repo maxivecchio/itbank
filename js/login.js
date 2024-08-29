@@ -5,8 +5,7 @@ function login() {
   let user = document.getElementById("usuario").value;
   let pass = document.getElementById("clave").value;
 
-
-  if (user == "Juan" && pass == "1234") {
+  if (user.toLowerCase() == "juan" && pass == "1234") {
     errorP.style.display = 'none';
     window.location = "inicio.html";
   } else {
