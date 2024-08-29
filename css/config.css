@@ -70,10 +70,42 @@ body {
   .sidebar {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    max-width: 250px;
     margin-bottom: 10px;
+    width: 100%;
   }
 }
+
+@media (max-width: 600px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_content {
+    padding-top: 10px;
+  }
+
+  .sidebar  {
+    max-width: none;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 12px;
+  }
+
+  .sidebar h2 {
+    font-size: 18px;
+  }
+
+  .sidebar ul li a {
+    padding: 2px 10px;
+  }
+
+  .sidebar ul li {
+    margin: 4px;
+  }
+}
+
 @media (max-width: 480px) {
   .content {
     padding: 10px;
@@ -82,4 +114,15 @@ body {
 
 .dashboard {
   gap: 0;
+}
+
+.config-active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.sidebar h2 {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }

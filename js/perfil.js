@@ -4,7 +4,6 @@ function guardarCambios() {
     const bio = document.getElementById("bio").value;
     const errorElement = document.getElementById("error");
 
-    // Validación simple (puedes agregar más validaciones según necesites)
     if (!email || !password) {
       errorElement.textContent =
         "Por favor, completa todos los campos.";
@@ -16,7 +15,6 @@ function guardarCambios() {
       return;
     }
 
-    // Aquí puedes agregar lógica para enviar los datos al servidor
     errorElement.textContent = "";
     alert("Cambios guardados con éxito!");
   }

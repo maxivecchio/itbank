@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/config.css" />
     <link rel="stylesheet" type="text/css" href="./css/notificaciones.css" />
     <title>Configuración | Home Banking</title>
     <link rel="icon" href="./img/logo.webp" type="image/weebp" />
@@ -30,16 +31,9 @@
             ></label>
             <ul class="dropdown-content">
               <li>
-                <a href="#"><i class="fas fa-user"></i>Ver perfil</a>
+                <a href="perfil.html"><i class="fas fa-user"></i>Ver perfil</a>
               </li>
               <hr />
-              <li>
-                <a href="#"><i class="fas fa-bell"></i>Notificaciones</a>
-              </li>
-              <hr />
-              <li>
-                <a href="#"><i class="fas fa-cog"></i>Config. Token</a>
-              </li>
               <li>
                 <a href="index.html"
                   ><i class="fas fa-arrow-right-from-bracket"></i>Cerrar
@@ -94,8 +88,24 @@
     </aside>
     <div class="web_frame">
       <div class="main_content">
-        <main class="dashboard">
-          <div class="container">
+        <div class="dashboard">
+          <aside class="sidebar">
+            <h2>Configuración</h2>
+            <ul>
+              <li>
+                <a href="perfil.html" class="">Perfil</a>
+              </li>
+              <li><a href="seguridad.html">Seguridad</a></li>
+              <li>
+                <a class="config-active" href="notificaciones.html"
+                  >Notificaciones</a
+                >
+              </li>
+              <li><a href="#preferencias">Preferencias</a></li>
+              <li><a href="#ayuda">Ayuda</a></li>
+            </ul>
+          </aside>
+          <main class="content">
             <h1>Gestión de Preferencias de Notificaciones</h1>
             <form id="notification-form">
               <div class="category">
@@ -176,9 +186,9 @@
               <button type="submit">Guardar Preferencias</button>
             </form>
             <p id="result"></p>
-          </div>
+          </main>
           <script src="./js/notificaciones.js"></script>
-        </main>
+        </div>
         <footer class="info-last">
           <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
         </footer>

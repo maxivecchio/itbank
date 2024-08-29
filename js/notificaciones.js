@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('notification-form');
     const result = document.getElementById('result');
 
-    // Cargar preferencias guardadas
     const savedPreferences = JSON.parse(localStorage.getItem('notificationPreferences')) || {};
     document.getElementById('email-promotions').checked = savedPreferences.emailPromotions || false;
     document.getElementById('email-updates').checked = savedPreferences.emailUpdates || false;
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         
-        // Obtener preferencias del formulario
         const preferences = {
             emailPromotions: document.getElementById('email-promotions').checked,
             emailUpdates: document.getElementById('email-updates').checked,
@@ -32,10 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
             appFrequency: document.getElementById('app-frequency').value
         };
 
-        // Guardar preferencias en localStorage
         localStorage.setItem('notificationPreferences', JSON.stringify(preferences));
         
-        // Mostrar mensaje de éxito
         result.textContent = 'Preferencias guardadas con éxito.';
     });
 });
