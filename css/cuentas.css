@@ -1,43 +1,48 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F4F4F4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 header h1 {
-    margin: 0;
-}
-main {
-    padding: 20px;
+  margin: 0;
 }
 .accounts-section {
-    max-width: 800px;
-    margin: 0 ;
+  max-width: 800px;
+  margin: 0;
 }
 .account-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
 }
 .account-card h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 .account-card p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
-.account-card button {
-    background-color: #004D99;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px;
-    text-align: center;
-    margin: 20px;
+.account-card button,
+.account-card a {
+  background-color: #004d99;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  display: inline-block;
 }
-.account-card button:hover {
-    background-color: #004991;
+
+.account-card a {
+    text-decoration: none;
+}
+
+.account-card button:hover,
+.account-card a:hover {
+  background-color: #004991;
 }
