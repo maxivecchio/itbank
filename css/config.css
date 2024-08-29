@@ -77,7 +77,8 @@ body {
 }
 
 @media (max-width: 600px) {
-  .dashboard {
+  .dashboard,
+  .container {
     display: flex;
     flex-direction: column;
   }
@@ -86,7 +87,7 @@ body {
     padding-top: 10px;
   }
 
-  .sidebar  {
+  .sidebar {
     max-width: none;
     margin: 0;
     margin-bottom: 10px;
