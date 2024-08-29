@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/config.css" />
     <link rel="stylesheet" type="text/css" href="./css/perfil.css" />
 
     <title>Perfil | Home Banking</title>
@@ -36,9 +37,7 @@
               </li>
               <hr />
               <li>
-                <a href="#"
-                  ><i class="fas fa-bell"></i>Notificaciones</a
-                >
+                <a href="#"><i class="fas fa-bell"></i>Notificaciones</a>
               </li>
               <hr />
               <li>
@@ -98,39 +97,46 @@
     </aside>
     <div class="web_frame">
       <div class="main_content">
-        <main class="dashboard">
-          <div class="container">
+        <div class="dashboard">
+          <aside class="sidebar">
+            <h2>Configuración</h2>
+            <ul>
+              <li><a href="perfil.html" class="">Perfil</a></li>
+              <li><a href="seguridad.html">Seguridad</a></li>
+              <li><a href="notificaciones.html">Notificaciones</a></li>
+              <li><a href="#preferencias">Preferencias</a></li>
+              <li><a href="#ayuda">Ayuda</a></li>
+            </ul>
+          </aside>
+          <main class="content">
             <div class="profile-header">
               <h1>Perfil de Usuario</h1>
             </div>
             <div class="profile-info">
               <label for="username">Nombre de Usuario</label>
-              <input
-                type="text"
-                id="username"
-                placeholder="UsuarioEjemplo"
-              />
+              <input type="text" id="username" placeholder="UsuarioEjemplo" />
 
               <label for="email">Correo Electrónico</label>
-              <input type="email" id="email" placeholder="usuario@example.com" />
-
-              <label for="text">Documento de Identidad</label>
               <input
-                type="text"
-                id="text"
-                placeholder="D.N.I"
+                type="email"
+                id="email"
+                placeholder="usuario@example.com"
               />
 
+              <label for="text">Documento de Identidad</label>
+              <input type="text" id="text" placeholder="D.N.I" />
+
               <label for="bio">Biografía</label>
-              <textarea id="bio" rows="4">Aquí puedes escribir algo sobre ti...</textarea
+              <textarea id="bio" rows="4">
+Aquí puedes escribir algo sobre ti...</textarea
               >
             </div>
             <div class="button-group">
               <button onclick="guardarCambios()">Guardar Cambios</button>
             </div>
             <div id="error" class="error"></div>
-          </div>
-        </main>
+          </main>
+        </div>
         <footer class="info-last">
           <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
         </footer>

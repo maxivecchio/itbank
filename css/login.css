@@ -149,3 +149,7 @@ body {
     padding: 10px 12px;
   }
 }
+
+.login-container p {
+  color: #fff;
+}

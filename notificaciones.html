@@ -34,9 +34,7 @@
               </li>
               <hr />
               <li>
-                <a href="#"
-                  ><i class="fas fa-bell"></i>Notificaciones</a
-                >
+                <a href="#"><i class="fas fa-bell"></i>Notificaciones</a>
               </li>
               <hr />
               <li>
@@ -97,77 +95,89 @@
     <div class="web_frame">
       <div class="main_content">
         <main class="dashboard">
-            <div class="container">
-                <h1>Gestión de Preferencias de Notificaciones</h1>
-                <form id="notification-form">
-                    <div class="category">
-                        <h2>Correo Electrónico</h2>
-                        <div class="notification-option">
-                            <label>
-                                <input type="checkbox" name="email-promotions" id="email-promotions">
-                                Promociones y Ofertas
-                            </label>
-                        </div>
-                        <div class="notification-option">
-                            <label>
-                                <input type="checkbox" name="email-updates" id="email-updates">
-                                Actualizaciones de Cuenta
-                            </label>
-                        </div>
-                        <div class="notification-option">
-                            <label for="email-frequency">Frecuencia:</label>
-                            <select id="email-frequency" name="email-frequency">
-                                <option value="daily">Diaria</option>
-                                <option value="weekly">Semanal</option>
-                                <option value="monthly">Mensual</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="category">
-                        <h2>SMS</h2>
-                        <div class="notification-option">
-                            <label>
-                                <input type="checkbox" name="sms-alerts" id="sms-alerts">
-                                Alertas Rápidas
-                            </label>
-                        </div>
-                        <div class="notification-option">
-                            <label for="sms-frequency">Frecuencia:</label>
-                            <select id="sms-frequency" name="sms-frequency">
-                                <option value="immediate">Inmediata</option>
-                                <option value="hourly">Cada Hora</option>
-                                <option value="daily">Diaria</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="category">
-                        <h2>Aplicación</h2>
-                        <div class="notification-option">
-                            <label>
-                                <input type="checkbox" name="app-news" id="app-news">
-                                Noticias y Actualizaciones
-                            </label>
-                        </div>
-                        <div class="notification-option">
-                            <label>
-                                <input type="checkbox" name="app-messages" id="app-messages">
-                                Mensajes Directos
-                            </label>
-                        </div>
-                        <div class="notification-option">
-                            <label for="app-frequency">Frecuencia:</label>
-                            <select id="app-frequency" name="app-frequency">
-                                <option value="instant">Instantánea</option>
-                                <option value="daily">Diaria</option>
-                                <option value="weekly">Semanal</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="submit">Guardar Preferencias</button>
-                </form>
-                <p id="result"></p>
-            </div>
-            <script src="./js/notificaciones.js"></script>
+          <div class="container">
+            <h1>Gestión de Preferencias de Notificaciones</h1>
+            <form id="notification-form">
+              <div class="category">
+                <h2>Correo Electrónico</h2>
+                <div class="notification-option">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="email-promotions"
+                      id="email-promotions"
+                    />
+                    Promociones y Ofertas
+                  </label>
+                </div>
+                <div class="notification-option">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="email-updates"
+                      id="email-updates"
+                    />
+                    Actualizaciones de Cuenta
+                  </label>
+                </div>
+                <div class="notification-option">
+                  <label for="email-frequency">Frecuencia:</label>
+                  <select id="email-frequency" name="email-frequency">
+                    <option value="daily">Diaria</option>
+                    <option value="weekly">Semanal</option>
+                    <option value="monthly">Mensual</option>
+                  </select>
+                </div>
+              </div>
+              <div class="category">
+                <h2>SMS</h2>
+                <div class="notification-option">
+                  <label>
+                    <input type="checkbox" name="sms-alerts" id="sms-alerts" />
+                    Alertas Rápidas
+                  </label>
+                </div>
+                <div class="notification-option">
+                  <label for="sms-frequency">Frecuencia:</label>
+                  <select id="sms-frequency" name="sms-frequency">
+                    <option value="immediate">Inmediata</option>
+                    <option value="hourly">Cada Hora</option>
+                    <option value="daily">Diaria</option>
+                  </select>
+                </div>
+              </div>
+              <div class="category">
+                <h2>Aplicación</h2>
+                <div class="notification-option">
+                  <label>
+                    <input type="checkbox" name="app-news" id="app-news" />
+                    Noticias y Actualizaciones
+                  </label>
+                </div>
+                <div class="notification-option">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="app-messages"
+                      id="app-messages"
+                    />
+                    Mensajes Directos
+                  </label>
+                </div>
+                <div class="notification-option">
+                  <label for="app-frequency">Frecuencia:</label>
+                  <select id="app-frequency" name="app-frequency">
+                    <option value="instant">Instantánea</option>
+                    <option value="daily">Diaria</option>
+                    <option value="weekly">Semanal</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit">Guardar Preferencias</button>
+            </form>
+            <p id="result"></p>
+          </div>
+          <script src="./js/notificaciones.js"></script>
         </main>
         <footer class="info-last">
           <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>

@@ -34,9 +34,7 @@
               </li>
               <hr />
               <li>
-                <a href="#"
-                  ><i class="fas fa-bell"></i>Notificaciones</a
-                >
+                <a href="#"><i class="fas fa-bell"></i>Notificaciones</a>
               </li>
               <hr />
               <li>
@@ -96,54 +94,75 @@
     </aside>
     <div class="web_frame">
       <div class="main_content">
-        <main class="dashboard">
-        <body>
-    <div class="container">
-        <header class="header">
-            <h1>Configuración de Seguridad</h1>
-        </header>
-        <main class="content">
-            <section id="cambiar-contraseña">
+        <div class="dashboard">
+          <div class="container">
+            <header class="header">
+              <h1>Configuración de Seguridad</h1>
+            </header>
+            <main class="content">
+              <section id="cambiar-contraseña">
                 <h2>Cambiar Contraseña</h2>
                 <form action="/cambiar-contraseña" method="post">
-                    <div class="form-group">
-                        <label for="current-password">Contraseña Actual</label>
-                        <input type="password" id="current-password" name="current-password" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="new-password">Nueva Contraseña</label>
-                        <input type="password" id="new-password" name="new-password" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="confirm-password">Confirmar Nueva Contraseña</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
-                    </div>
-                    <button type="submit">Cambiar Contraseña</button>
+                  <div class="form-group">
+                    <label for="current-password">Contraseña Actual</label>
+                    <input
+                      type="password"
+                      id="current-password"
+                      name="current-password"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="new-password">Nueva Contraseña</label>
+                    <input
+                      type="password"
+                      id="new-password"
+                      name="new-password"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="confirm-password"
+                      >Confirmar Nueva Contraseña</label
+                    >
+                    <input
+                      type="password"
+                      id="confirm-password"
+                      name="confirm-password"
+                      required
+                    />
+                  </div>
+                  <button type="submit">Cambiar Contraseña</button>
                 </form>
-            </section>
+              </section>
 
-            <section id="autenticacion">
+              <section id="autenticacion">
                 <h2>Autenticación de Dos Factores</h2>
-                <p>Configura la autenticación de dos factores (2FA) para aumentar la seguridad de tu cuenta.</p>
+                <p>
+                  Configura la autenticación de dos factores (2FA) para aumentar
+                  la seguridad de tu cuenta.
+                </p>
                 <form action="/configurar-2fa" method="post">
-                    <div class="form-group">
-                        <label for="phone">Número de Teléfono</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+34 600 000 000" required>
-                    </div>
-                    <button type="submit">Configurar 2FA</button>
+                  <div class="form-group">
+                    <label for="phone">Número de Teléfono</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+34 600 000 000"
+                      required
+                    />
+                  </div>
+                  <button type="submit">Configurar 2FA</button>
                 </form>
-            </section>
-        </main>
-    </div>
-        </body>
-</html>
-
-        </main>
+              </section>
+            </main>
+          </div>
+        </div>
         <footer class="info-last">
           <p>&copy; 2024 Banco Rossum. Todos los derechos reservados</p>
         </footer>
       </div>
     </div>
-    
   </body>
 </html>
