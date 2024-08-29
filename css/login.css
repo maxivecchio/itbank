@@ -70,7 +70,6 @@ body {
   width: 100%;
   padding: 12px 15px;
   margin: 10px 0;
-  border: 2px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
   box-sizing: border-box;
@@ -117,15 +116,15 @@ body {
 
 @media (max-width: 480px) {
   body {
-    flex-direction: column; 
-    justify-content: flex-start; 
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .logo-container {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     top: 0;
     left: 0;
   }
@@ -152,4 +151,11 @@ body {
 
 .login-container p {
   color: #fff;
+}
+
+#login-error {
+  color: #e62a2a;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
