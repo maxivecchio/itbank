@@ -304,6 +304,12 @@ body {
   .side_menu_wrapper {
     display: none;
   }
+
+
+  .balance {
+    max-width: none;
+  }
+
   .main_content {
     margin-left: 0;
     padding: 10px;
